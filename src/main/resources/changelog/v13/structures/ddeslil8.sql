@@ -1,0 +1,5 @@
+-- Index DDESLIL8 (Création)
+
+CREATE INDEX "DDESLIL8" ON "DDESLIP" ( "DLDTSUP" ASC, "DLNUENTDDE" ASC, 
+"DLQTEXP" ASC);
+LABEL ON INDEX "DDESLIL8" IS 'Clé: Dat sup, Num dem, Qté exp';

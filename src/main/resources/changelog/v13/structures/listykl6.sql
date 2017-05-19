@@ -1,0 +1,4 @@
+-- Index LISTYKL6 (Création)
+
+CREATE INDEX "LISTYKL6" ON "LISTYKP" ( "TKTPOPRTYS" ASC, "TKCXTYPSTK" ASC);
+LABEL ON INDEX "LISTYKL6" IS 'Clé: cat opé, type stpck ext';

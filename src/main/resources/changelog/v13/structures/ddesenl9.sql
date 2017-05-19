@@ -1,0 +1,6 @@
+-- Index DDESENL9 (Création)
+
+CREATE INDEX "DDESENL9" ON "DDESENP" ( "DDDTSUP" ASC, "DDNUENTDDE" ASC, 
+"DDTGGNAUTR" ASC, "DDCDCLICOM" ASC, "DDCDTYBLC" ASC);
+LABEL ON INDEX "DDESENL9" IS 
+'Clé: dat sup, dem, mot ext orient, cli com, typ BL';

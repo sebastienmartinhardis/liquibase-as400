@@ -1,0 +1,4 @@
+-- Index DDESENL8 (Création)
+
+CREATE INDEX "DDESENL8" ON "DDESENP" ( "DDCDINTPAR" ASC, "DDDTSUP" ASC);
+LABEL ON INDEX "DDESENL8" IS 'Clé: type BL, date suppr';

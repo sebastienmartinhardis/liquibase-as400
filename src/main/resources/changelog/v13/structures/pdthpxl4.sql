@@ -1,0 +1,5 @@
+-- Index PDTHPXL4 (Création)
+
+CREATE INDEX "PDTHPXL4" ON "PDTHPXP" ( "PHOPSUP" ASC, "PHDTDBAPPB" ASC, 
+"PHDTFINPRX" ASC);
+LABEL ON INDEX "PDTHPXL4" IS 'Clé: opé suppr, date déb BOOST, date fin prix';

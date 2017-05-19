@@ -1,0 +1,4 @@
+-- Index CMDEENL6 (Création)
+
+CREATE INDEX "CMDEENL6" ON "CMDEENP" ( "CDDTSUP" ASC, "CDNOCMD" ASC);
+LABEL ON INDEX "CMDEENL6" IS 'Clé: date suppr, num cde';

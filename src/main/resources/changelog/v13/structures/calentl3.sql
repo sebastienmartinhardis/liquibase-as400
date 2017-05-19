@@ -1,0 +1,4 @@
+-- Index CALENTL3 (Création)
+
+CREATE INDEX "CALENTL3" ON "CALENTP" ( "C1OPSUP" ASC, "C1DTFINCAL" ASC);
+LABEL ON INDEX "CALENTL3" IS 'Clé: opé suppr, date fin cal';

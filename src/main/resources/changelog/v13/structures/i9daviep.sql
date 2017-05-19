@@ -1,0 +1,30 @@
+-- Table I9DAVIEP (Restructuration)
+
+ALTER TABLE I9DAVIEP ADD COLUMN EMOORISTK NUMERIC (1, 0) 
+NOT NULL WITH DEFAULT BEFORE EDHTRTDAV;
+ALTER TABLE I9DAVIEP ADD COLUMN EIDMARCHE NUMERIC (9, 0) 
+NOT NULL WITH DEFAULT BEFORE EDHTRTDAV;
+ALTER TABLE I9DAVIEP ADD COLUMN ECDAPSRV NUMERIC (1 , 0) 
+NOT NULL WITH DEFAULT;
+ALTER TABLE I9DAVIEP ADD COLUMN ECDPREREL CHAR (20) 
+NOT NULL WITH DEFAULT;
+ALTER TABLE I9DAVIEP ADD COLUMN ECDTYPLRE CHAR (5) 
+NOT NULL WITH DEFAULT;
+ALTER TABLE I9DAVIEP ADD COLUMN ECDSRVREL NUMERIC (2 , 0) 
+NOT NULL WITH DEFAULT;
+
+LABEL ON "I9DAVIEP" (
+ "EMOORISTK" IS 'Motif orientation de stock',
+ "EIDMARCHE" IS 'Id marché',
+ "ECDAPSRV" IS 'Code application    Service sur reliquat',
+ "ECDPREREL" IS 'Code prestation sur reliquat',
+ "ECDTYPLRE" IS 'Typologie logistique sur reliquat',
+ "ECDSRVREL" IS 'Service de livraison sur reliquat');
+
+LABEL ON "I9DAVIEP" (
+ EMOORISTK TEXT IS 'Motif orientation de stock',
+ EIDMARCHE TEXT IS 'Id marché',
+ ECDAPSRV TEXT IS 'Code application Service sur reliquat',
+ ECDPREREL TEXT IS 'Code prestation sur reliquat',
+ ECDTYPLRE TEXT IS 'Typologie logistique sur reliquat',
+ ECDSRVREL TEXT IS 'Service de livraison sur reliquat');

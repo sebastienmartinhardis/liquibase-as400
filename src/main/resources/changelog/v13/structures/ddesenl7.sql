@@ -1,0 +1,4 @@
+-- Index DDESENL7 (Création)
+
+CREATE INDEX "DDESENL7" ON "DDESENP" ( "DDNUENTDDE" ASC, "DDDTSUP" ASC);
+LABEL ON INDEX "DDESENL7" IS 'Clé: num dem, date suppr';

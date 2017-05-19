@@ -1,0 +1,4 @@
+-- Index CMDELIL6 (Création)
+
+CREATE INDEX "CMDELIL6" ON "CMDELIP" ( "CLMOTORSTK" ASC, "CLIDMARCHE" ASC);
+LABEL ON INDEX "CMDELIL6" IS 'Clé: code orient. stock, Num marché';

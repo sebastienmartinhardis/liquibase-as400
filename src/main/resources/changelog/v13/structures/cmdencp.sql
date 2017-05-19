@@ -1,0 +1,71 @@
+-- Table CMDENCP (Création)
+
+CREATE TABLE "CMDENCP" (
+ "CINOCMD" DEC(9, 0) NOT NULL WITH DEFAULT,
+ "CICDCTRRSP" CHAR(4) NOT NULL WITH DEFAULT,
+ "CICDTYCDE" CHAR(6) NOT NULL WITH DEFAULT,
+ "CITYPAVSEP" CHAR(6) NOT NULL WITH DEFAULT,
+ "CITAUXREM" NUMERIC(7, 4) NOT NULL WITH DEFAULT,
+ "CIMTFPORTR" DEC(15, 2) NOT NULL WITH DEFAULT,
+ "CIMTFADMR" DEC(15, 2) NOT NULL WITH DEFAULT,
+ "CIMTAUTFRR" DEC(15, 2) NOT NULL WITH DEFAULT,
+ "CIMTFEMBR" DEC(15, 2) NOT NULL WITH DEFAULT,
+ "CIMTFXXX1R" DEC(15, 2) NOT NULL WITH DEFAULT,
+ "CIMTFXXX2R" DEC(15, 2) NOT NULL WITH DEFAULT,
+ "CIOPCRE" CHAR(10) NOT NULL WITH DEFAULT,
+ "CIDTCRE" DATE NOT NULL WITH DEFAULT,
+ "CIHECRE" TIME NOT NULL WITH DEFAULT,
+ "CIOPMOD" CHAR(10) NOT NULL WITH DEFAULT,
+ "CIDTMOD" DATE NOT NULL WITH DEFAULT,
+ "CIHEMOD" TIME NOT NULL WITH DEFAULT,
+ "CIOPSUP" CHAR(10) NOT NULL WITH DEFAULT,
+ "CIDTSUP" DATE NOT NULL WITH DEFAULT,
+ "CIHESUP" TIME NOT NULL WITH DEFAULT,
+ PRIMARY KEY ("CINOCMD"));
+
+LABEL ON TABLE "CMDENCP" IS 'Complément entête de commande';
+
+LABEL ON "CMDENCP" (
+ "CINOCMD" IS 'Numéro commande',
+ "CICDCTRRSP" IS 'Code centre         de responsabilité',
+ "CICDTYCDE" IS 'Type de commande',
+ "CITYPAVSEP" IS 'Type d avoir séparé',
+ "CITAUXREM" IS 'Taux de remise      en pied',
+ "CIMTFPORTR" IS 'Montant Frais de    port restant à      rapprocher',
+ "CIMTFADMR" IS 'Montant Frais       admin restant à     rapprocher',
+ "CIMTAUTFRR" IS 'Montant Autres      frais restant à     rapprocher',
+ "CIMTFEMBR" IS 'Montant Frais       d emballage restant à rapprocher',
+ "CIMTFXXX1R" IS 'Montant Frais       XXX1 restant à      rapprocher',
+ "CIMTFXXX2R" IS 'Montant Frais       XXX2 restant à      rapprocher',
+ "CIOPCRE" IS 'Opérateur création',
+ "CIDTCRE" IS 'Date création',
+ "CIHECRE" IS 'Heure création',
+ "CIOPMOD" IS 'Opérateur           modification',
+ "CIDTMOD" IS 'Date modification',
+ "CIHEMOD" IS 'Heure modification',
+ "CIOPSUP" IS 'Opérateur           suppression',
+ "CIDTSUP" IS 'Date suppression',
+ "CIHESUP" IS 'Heure suppression');
+
+LABEL ON "CMDENCP" (
+ CINOCMD TEXT IS 'Numéro commande',
+ CICDCTRRSP TEXT IS 'Code centre de responsabilité',
+ CICDTYCDE TEXT IS 'Type de commande',
+ CITYPAVSEP TEXT IS 'Type d avoir séparé',
+ CITAUXREM TEXT IS 'Taux de remise en pied',
+ CIMTFPORTR TEXT IS 'Montant Frais de port restant à rapprocher',
+ CIMTFADMR TEXT IS 'Montant Frais admin restant à rapprocher',
+ CIMTAUTFRR TEXT IS 'Montant Autres frais restant à rapprocher',
+ CIMTFEMBR TEXT IS 'Montant Frais d emballage restant à rapprocher',
+ CIMTFXXX1R TEXT IS 'Montant Frais XXX1 restant à rapprocher',
+ CIMTFXXX2R TEXT IS 'Montant Frais XXX2 restant à rapprocher',
+ CIOPCRE TEXT IS 'Opérateur création',
+ CIDTCRE TEXT IS 'Date création',
+ CIHECRE TEXT IS 'Heure création',
+ CIOPMOD TEXT IS 'Opérateur modification',
+ CIDTMOD TEXT IS 'Date modification',
+ CIHEMOD TEXT IS 'Heure modification',
+ CIOPSUP TEXT IS 'Opérateur suppression',
+ CIDTSUP TEXT IS 'Date suppression',
+ CIHESUP TEXT IS 'Heure suppression');
+

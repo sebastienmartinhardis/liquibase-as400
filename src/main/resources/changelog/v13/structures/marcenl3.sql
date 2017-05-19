@@ -1,0 +1,4 @@
+-- Index MARCENL3 (Création)
+
+CREATE INDEX "MARCENL3" ON "MARCENP" ( "MACDINST" ASC, "MACODMAR" ASC);
+LABEL ON INDEX "MARCENL3" IS 'Clé: stat entete mar, code mar';
