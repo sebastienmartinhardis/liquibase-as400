@@ -15,5 +15,23 @@
             splitStatements="true"
             stripComments="true"/>
     </changeSet>
+    <changeSet id="V13-2" author="SMAR">
+        <sqlFile
+                encoding="ISO-8859-1"
+                endDelimiter=";"
+                path="structures/cmdeenl6.sql"
+                relativeToChangelogFile="true"
+                splitStatements="true"
+                stripComments="true"/>
+    </changeSet>
+    <changeSet id="V13-3" author="SMAR">
+        <sqlFile
+                encoding="ISO-8859-1"
+                endDelimiter=";"
+                path="structures/cmdeenl7.sql"
+                relativeToChangelogFile="true"
+                splitStatements="true"
+                stripComments="true"/>
+    </changeSet>
 
 </databaseChangeLog>
