@@ -8,6 +8,13 @@
     <artifactId>liquibase</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <database.host>192.168.54.10</database.host>
+        <database.schema>SMAR_DATA</database.schema>
+        <database.user>SMAR</database.user>
+        <database.password>hardis41</database.password>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>net.sf.jt400</groupId>
@@ -26,10 +33,11 @@
                         ${basedir}/src/main/resources/master.xml
                     </changeLogFile>
                     <driver>com.ibm.as400.access.AS400JDBCDriver</driver>
-                    <url>jdbc:as400://192.168.54.10/;naming=system;date format=iso;librairies=SMAR_DATA</url>
-                    <defaultSchemaName>SMAR_DATA</defaultSchemaName>
-                    <username>SMAR</username>
-                    <password>hardis41</password>
+                    <url>jdbc:as400://${database.host}/;naming=system;date format=iso;librairies=${database.schema}</url>
+                    <defaultSchemaName>${database.schema}</defaultSchemaName>
+                    <username>${database.user}</username>
+                    <password>${database.password}</password>
+                    <promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
                 </configuration>
             </plugin>
         </plugins>
