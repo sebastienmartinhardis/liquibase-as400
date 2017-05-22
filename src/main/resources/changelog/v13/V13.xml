@@ -33,5 +33,68 @@
                 splitStatements="true"
                 stripComments="true"/>
     </changeSet>
+    <changeSet id="V13-4" author="SMAR">
+        <sqlFile
+                encoding="ISO-8859-1"
+                endDelimiter=";"
+                path="structures/cmdelil6.sql"
+                relativeToChangelogFile="true"
+                splitStatements="true"
+                stripComments="true"/>
+    </changeSet>
+	<changeSet id="V13-5" author="SMAR">
+        <sqlFile
+                encoding="ISO-8859-1"
+                endDelimiter=";"
+                path="structures/CMDELIL7.sql"
+                relativeToChangelogFile="true"
+                splitStatements="true"
+                stripComments="true"/>
+    </changeSet>
+	<changeSet id="V13-6" author="SMAR">
+        <sqlFile
+                encoding="ISO-8859-1"
+                endDelimiter=";"
+                path="structures/CMDELIL8.sql"
+                relativeToChangelogFile="true"
+                splitStatements="true"
+                stripComments="true"/>
+    </changeSet>
+	<changeSet id="V13-7" author="SMAR">
+        <sqlFile
+                encoding="ISO-8859-1"
+                endDelimiter=";"
+                path="structures/CMDELIL9.sql"
+                relativeToChangelogFile="true"
+                splitStatements="true"
+                stripComments="true"/>
+    </changeSet>
+	<changeSet id="V13-8" author="SMAR">
+        <sqlFile
+                encoding="ISO-8859-1"
+                endDelimiter=";"
+                path="structures/CMDELIL10.sql"
+                relativeToChangelogFile="true"
+                splitStatements="true"
+                stripComments="true"/>
+    </changeSet>
+	<changeSet id="V13-9" author="SMAR">
+        <sqlFile
+                encoding="ISO-8859-1"
+                endDelimiter=";"
+                path="structures/cmdencp.sql"
+                relativeToChangelogFile="true"
+                splitStatements="true"
+                stripComments="true"/>
+    </changeSet>
+	<changeSet id="V13-10" author="SMAR">
+        <sqlFile
+                encoding="ISO-8859-1"
+                endDelimiter=";"
+                path="structures/CMDRLCL2.sql"
+                relativeToChangelogFile="true"
+                splitStatements="true"
+                stripComments="true"/>
+    </changeSet>
 
 </databaseChangeLog>
