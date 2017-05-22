@@ -91,7 +91,25 @@
         <sqlFile
                 encoding="ISO-8859-1"
                 endDelimiter=";"
+                path="structures/cmdrlcp.sql"
+                relativeToChangelogFile="true"
+                splitStatements="true"
+                stripComments="true"/>
+    </changeSet>
+	<changeSet id="V13-11" author="SMAR">
+        <sqlFile
+                encoding="ISO-8859-1"
+                endDelimiter=";"
                 path="structures/CMDRLCL2.sql"
+                relativeToChangelogFile="true"
+                splitStatements="true"
+                stripComments="true"/>
+    </changeSet>
+	<changeSet id="V13-12" author="SMAR">
+        <sqlFile
+                encoding="ISO-8859-1"
+                endDelimiter=";"
+                path="structures/CMDRLCL3.sql"
                 relativeToChangelogFile="true"
                 splitStatements="true"
                 stripComments="true"/>
